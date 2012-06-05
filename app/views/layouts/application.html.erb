@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AhaApp</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+	<div id="container">
+
+		<header>
+			<h1>
+				<%= link_to image_tag('bulb.jpg', :size => '75x100'), root_url %>
+				<%= link_to 'Aha! Notebook', root_url %>
+			</h1>
+		</header>
+
+		<section>
+			<%= yield %>
+		</section>
+
+		
+	</div>
+</body>
+</html>
