@@ -1,0 +1,7 @@
+<ul>
+  <% @notes.each do |note| %>
+    <%= render 'note', :note => note %>
+  <% end %>
+</ul>
+
+<%= render 'form' %>
