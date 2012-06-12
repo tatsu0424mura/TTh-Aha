@@ -36,6 +36,11 @@ class NotesController < ApplicationController
   # GET /notes/1/edit
   def edit
     @note = Note.find(params[:id])
+    
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 
   # POST /notes
@@ -62,6 +67,7 @@ class NotesController < ApplicationController
 
     respond_to do |format|
       if @note.update_attributes(params[:note])
+        format.js   
         format.html { redirect_to @note, notice: 'Note was successfully updated.' }
         format.json { head :no_content }
       else

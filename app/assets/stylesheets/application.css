@@ -17,13 +17,24 @@ body {
   font: 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+#theme_links {
+  float: right;
+}
 #container {
-  background: #fff;
+//  background: #fff;
   border-radius: 5px;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.25);
   margin: 20px auto;
   padding-bottom: 20px;
   width: 960px;
+}
+
+.legalpad {
+  background: #FFF959;
+}
+
+.notepad {
+  background: #FFF;
 }
 
 header {
